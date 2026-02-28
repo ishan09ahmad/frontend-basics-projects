@@ -1,0 +1,219 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: black;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fcaf02;
+  padding: 1rem 1.5rem;
+}
+header nav .logo {
+  font-size: 1.5rem;
+  font-style: italic;
+  font-weight: 700;
+}
+header nav .logo span {
+  border-bottom: 2px solid black;
+}
+
+header nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  list-style: none;
+  font-size: 1.25rem;
+}
+.hamburger {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.5rem;
+  display: none;
+}
+
+.hamburger div {
+  width: 35px;
+  height: 2px;
+  border: 2px solid black;
+}
+
+main {
+  padding: 1.5rem;
+}
+
+main .about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+main .about div {
+  width: 65%;
+}
+main .about div h1 {
+  color: white;
+  margin-bottom: 1.5rem;
+}
+main .about div p {
+  color: white;
+  margin-bottom: 1.5rem;
+}
+
+main .about div .button button {
+  background-color: #fcaf02;
+  color: black;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 6px 3rem;
+  border-radius: 75px;
+  cursor: pointer;
+}
+
+main .about figure {
+  width: 35%;
+}
+main .about figure img {
+  width: 100%;
+  transform: scaleX(-1);
+}
+
+main .contact {
+  margin-bottom: 3rem;
+}
+main .contact h2 {
+  color: #fcaf02;
+  margin-bottom: 1.5rem;
+}
+main .contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+main .contact form input {
+  width: 100%;
+  padding: 0.5rem;
+  padding-left: 1rem;
+  border-radius: 50px;
+  border: 1px solid #fcaf02;
+  background-color: black;
+  color: white;
+  outline: none;
+}
+main .contact form input::placeholder {
+  color: #fcaf02;
+}
+main .contact form .combined {
+  display: flex;
+  gap: 1.5rem;
+}
+main .contact form button {
+  background-color: #fcaf02;
+  color: black;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 6px 2rem;
+  border-radius: 75px;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  width: fit-content;
+  align-self: center;
+}
+
+table {
+  width: 100%;
+  color: #fcaf02;
+
+  border-collapse: collapse;
+  margin-bottom: 2.5rem;
+}
+th,
+td {
+  border-right: 1px solid #fcaf02;
+}
+thead {
+  border: 1px solid #fcaf02;
+  text-align: left;
+}
+thead th {
+  padding: 0.75rem;
+}
+
+tbody {
+  border: 1px solid #fcaf02;
+}
+tbody td {
+  padding: 0.75rem;
+}
+
+tfoot {
+  background-color: #fcaf02;
+  border: 1px solid #fcaf02;
+  color: black;
+  text-align: left;
+}
+
+tfoot td {
+  padding: 0.75rem;
+  border-right: 1px solid black;
+}
+tfoot td:last-child {
+  border-right: 1px solid #fcaf02;
+}
+
+@media (max-width: 768px) {
+  header nav {
+    padding: 0.75rem 1.5rem;
+  }
+  header nav .logo {
+    font-size: 1.25rem;
+  }
+
+  header nav ul {
+    gap: 0.75rem;
+    font-size: 1rem;
+  }
+
+  main .about div h1 {
+    font-size: 1.5rem;
+  }
+  main .about div p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 500px) {
+  header nav ul {
+    display: none;
+  }
+  .hamburger {
+    display: flex;
+  }
+  main .about div {
+    width: 100%;
+  }
+  main .about figure {
+    display: none;
+  }
+}
