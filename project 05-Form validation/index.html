@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="./script.js" defer></script>
+    <title>Form</title>
+  </head>
+  <body>
+    <main>
+      <form action="#" method="post" id="form">
+        <div class="email">
+          <label for="email">Email</label>
+          <input
+            type="text"
+            id="email"
+            name="email"
+            placeholder="Example@email.com"
+            autocomplete="username"
+          />
+          <span class="hide" id="errorEmail">.</span>
+        </div>
+        <div class="password">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Your password"
+            autocomplete="current-password"
+          />
+          <span class="hide" id="errorPassword"></span>
+          <span class="formCorrect hide" id="formCorrect">All good to go!</span>
+        </div>
+
+        <button type="submit">Submit</button>
+      </form>
+
+      <div class="window hide" id="window">
+        <button class="ok" id="ok">Ok</button>
+        <button class="clear" id="clear">Clear</button>
+      </div>
+    </main>
+  </body>
+</html>
