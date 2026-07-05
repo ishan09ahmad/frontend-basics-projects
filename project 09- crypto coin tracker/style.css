@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #1a1a1c;
+  color: #fff;
+  min-height: 100vh;
+}
+
+main {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 50px 0 80px 0;
+}
+
+.top {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.75rem;
+  align-items: center;
+}
+
+input {
+  flex: 1;
+  padding: 14px 18px;
+  background: #161b22;
+  color: white;
+  border: 2px solid #30363d;
+  border-radius: 5px;
+  font-size: 15px;
+  transition: 0.2s;
+}
+
+input::placeholder {
+  color: #8b949e;
+}
+
+input:focus {
+  border-color: #58a6ff;
+  box-shadow: 0 0 10px rgba(88, 166, 255, 0.35);
+  outline: none;
+}
+
+.buttons {
+  display: flex;
+  gap: 14px;
+}
+
+.btn {
+  padding: 14px;
+  border: none;
+  border-radius: 5px;
+  background: #238636;
+  color: white;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.2s;
+  font-size: 15px;
+}
+
+.btn:hover {
+  background: #2ea043;
+  transform: translateY(-2px);
+}
+
+.btn:active {
+  transform: scale(0.96);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #161b22;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+}
+
+thead {
+  background: #21262d;
+}
+
+th {
+  text-align: left;
+  padding: 18px;
+  color: #58a6ff;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+}
+
+td {
+  padding: 18px;
+  border-bottom: 1px solid #30363d;
+  font-size: 18px;
+}
+
+tbody tr {
+  transition: 0.25s;
+}
+
+tbody tr:nth-child(even) {
+  background: #1b222c;
+}
+
+tbody tr:hover {
+  background: #263040;
+}
+
+.name {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.name img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+.green {
+  color: #3fb950;
+  font-weight: bold;
+}
+
+.red {
+  color: #f85149;
+  font-weight: bold;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #444;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background: #161b22;
+}
+
+@media (max-width: 700px) {
+  .top {
+    flex-direction: column;
+  }
+  input {
+    flex: 0;
+    width: 100%;
+  }
+
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}

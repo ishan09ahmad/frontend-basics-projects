@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CryptoCoins</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <section class="top">
+        <input id="input" type="text" placeholder="Search By Name or Symbol " />
+
+        <div class="buttons">
+          <button class="btn" id="mkt-cap">Sort By Mkt Cap</button>
+          <button class="btn" id="percentage">Sort by percentage</button>
+        </div>
+      </section>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Symbol</th>
+            <th>Price</th>
+            <th>Volume</th>
+            <th>24h Change</th>
+            <th>Market Cap</th>
+          </tr>
+        </thead>
+        <tbody id="table-body">
+         
+        </tbody>
+      </table>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
